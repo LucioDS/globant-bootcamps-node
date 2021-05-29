@@ -11,9 +11,6 @@ app.set("port", config.port);
 const server = http.createServer(app);
 
 server.listen(config.port, function () {
-  const line = new Array(80).join("_");
-
-  console.info(line);
   console.info(`start: ${new Date()}`);
   console.info(line + "\n");
 });
